@@ -13,3 +13,18 @@ console.log(`foo.length: ${foo.length}`);
 (function () {
   console.log("from IIFE function");
 })();
+
+// constructor
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayHi = function () {
+    console.log(`Hi! My name is ${this.name}. I'm ${this.age}.`);
+  };
+}
+
+let john = new Person("John", 30);
+let mary = new Person("Mary", 27);
+
+john.sayHi();
+mary.sayHi();
