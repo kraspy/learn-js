@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS - Lesson 4 / Homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              1. Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+            </h2>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">First number</label>
+              <input class="u-full-width" type="number" id="firstNumber" />
+            </div>
+            <div class="six columns">
+              <label for="exampleEmailInput">Last number</label>
+              <input class="u-full-width" type="number" id="lastNumber" />
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn1">
+            Show Result
+          </button>
+          <div class="result"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              2. Запросить 2 числа и найти только наибольший общий делитель.
+            </h2>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">First number</label>
+              <input class="u-full-width" type="number" id="firstNumber" />
+            </div>
+            <div class="six columns">
+              <label for="exampleEmailInput">Last number</label>
+              <input class="u-full-width" type="number" id="lastNumber" />
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn2">
+            Show Result
+          </button>
+          <div class="result"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              3. Запросить у пользователя число и вывести все делители этого
+              числа.
+            </h2>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Number</label>
+              <input class="u-full-width" type="number" id="firstNumber" />
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn3">
+            Show Result
+          </button>
+          <div class="result"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>4. Определить количество цифр в введенном числе.</h2>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Number</label>
+              <input class="u-full-width" type="number" id="firstNumber" />
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn4">
+            Show Result
+          </button>
+          <div class="result"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел
+              положительных, отрицательных и нулей. При этом также посчитать,
+              сколько четных и нечетных. Вывести статистику на экран. Учтите,
+              что достаточно одной переменной (не 10) для ввода чисел
+              пользователем.
+            </h2>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput"
+                >Введите 10 чисел через пробел</label
+              >
+              <input class="u-full-width" type="text" id="numbers" />
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn5">
+            Show Result
+          </button>
+          <div class="result"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              6. Зациклить калькулятор. Запросить у пользователя 2 числа и знак,
+              решить пример, вывести результат и спросить, хочет ли он решить
+              еще один пример. И так до тех пор, пока пользователь не откажется.
+            </h2>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn6">
+            Run calculate!
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              7. Запросить у пользователя число и на сколько цифр его сдвинуть.
+              Сдвинуть цифры числа и вывести результат (если число 123456
+              сдвинуть на 2 цифры, то получится 345612).
+            </h2>
+          </div>
+          <div class="row">
+            <div class="three columns">
+              <label for="exampleEmailInput">Number</label>
+              <input class="u-full-width" type="number" id="number" />
+            </div>
+            <div class="two columns">
+              <label for="exampleEmailInput">Offset</label>
+              <input class="u-full-width" type="number" id="offset" />
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn7">
+            Show Result
+          </button>
+          <div class="result"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              8. Зациклить вывод дней недели таким образом: «День недели. Хотите
+              увидеть следующий день?» и так до тех пор, пока пользователь
+              нажимает OK.
+            </h2>
+          </div>
+        </div>
+        <div class="flex">
+          <button class="button-primary" type="button" id="btn8">
+            Перечислим дни недели?
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="row">
+            <h2>
+              9. Вывести таблицу умножения для всех чисел от 2 до 9. Каждое
+              число необходимо умножить на числа от 1 до 10.
+            </h2>
+          </div>
+          <div class="row"></div>
+        </div>
+        <button class="button-primary" type="button" id="btn9">
+          Show a multiplication table
+        </button>
+
+        <div class="result"></div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <h2>
+            10. Игра «Угадай число». Предложить пользователю загадать число от 0
+            до 100 и отгадать его следующим способом: каждую итерацию цикла
+            делите диапазон чисел пополам, записываете результат в N и
+            спрашиваете у пользователя «Ваше число > N, < N или == N?». В
+            зависимости от того что указал пользователь, уменьшаете диапазон.
+            Начальный диапазон от 0 до 100, поделили пополам и получили 50. Если
+            пользователь указал, что его число > 50, то изменили диапазон на от
+            51 до 100. И так до тех пор, пока пользователь не выберет == N.
+          </h2>
+        </div>
+        <div>
+          <label for="exampleEmailInput">Guess the number from 1 to 100</label>
+          <button
+            class="button-primary"
+            style="width: 100%"
+            type="button"
+            id="btn10"
+          >
+            Start the Game!
+          </button>
+        </div>
+        <div class="flex">
+          <div style="flex-basis: 150px">
+            <button class="button-primary" type="button" id="moreBtn">
+              My number is more (>)
+            </button>
+            <button class="button-primary" type="button" id="lessBtn">
+              My number is less (<)
+            </button>
+            <button class="button bg-orange" type="button" id="equalBtn">
+              This is My number! (===)
+            </button>
+          </div>
+          <div class="result six columns"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
